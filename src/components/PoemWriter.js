@@ -16,6 +16,7 @@ class PoemWriter extends React.Component {
           value={this.state.content}
           onChange={this.setPoemContent}
         />
+        {!this.state.isValid &&
         <div
           id="poem-validation-error"
           style={{color: 'red'}}
