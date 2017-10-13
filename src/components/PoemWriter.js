@@ -5,11 +5,11 @@ class PoemWriter extends React.Component {
     super();
 
     this.state = {
-      content: ''
+      content: '',
       isValid: true
     };
   }
-  
+
   setPoemContent = event => {
    const content = event.target.value;
    this.setState({
