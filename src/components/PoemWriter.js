@@ -23,6 +23,7 @@ class PoemWriter extends React.Component {
         >
           This poem is not written in the right structure!
         </div>
+      }
       </div>
     );
   }
