@@ -9,6 +9,14 @@ class PoemWriter extends React.Component {
       isValid: true
     };
   }
+  
+  setPoemContent = event => {
+   const content = event.target.value;
+   this.setState({
+     content,
+     isValid: isValidPoem(content),
+   });
+ }
 
   render() {
     return (
