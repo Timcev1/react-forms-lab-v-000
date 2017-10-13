@@ -4,7 +4,10 @@ class PoemWriter extends React.Component {
   constructor() {
     super();
 
-    this.state = {};
+    this.state = {
+      content,
+      isValid: isValidPoem(content),
+    };
   }
 
   render() {
